@@ -81,7 +81,6 @@ public class Book
 			", title='" + title + '\'' +
 			", author='" + author + '\'' +
 			", price=" + price +
-			", description='" + description + '\'' +
 			'}';
 	}
 }

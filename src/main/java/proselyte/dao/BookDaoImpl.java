@@ -2,17 +2,18 @@ package proselyte.dao;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 import org.springframework.stereotype.Repository;
 import proselyte.model.Book;
 
 import java.util.List;
+import java.util.logging.Logger;
 
 @Repository
 public class BookDaoImpl implements BookDao
 {
-	private static final Logger logger = LoggerFactory.getLogger(BookDaoImpl.class);
+	//private static final Logger logger = LoggerFactory.getLogger(BookDaoImpl.class);
+	private static final Logger logger = Logger.getLogger(BookDaoImpl.class.getSimpleName());
 
 	private SessionFactory sessionFactory;
 
